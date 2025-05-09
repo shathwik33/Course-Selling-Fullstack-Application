@@ -1,4 +1,4 @@
-import React, { useState } from "react";  
+import React, { useState } from "react";
 import UserPage from "./UserPage";
 import AdminPage from "./AdminPage";
 
@@ -14,18 +14,10 @@ export default function App() {
 
   return (
     <div className="container" style={{ flexDirection: "column" }}>
-      <button
-        onClick={() => setPage("user")}
-        className="nav-link"
-        // style={{ margin: 20 }}
-      >
+      <button onClick={() => setPage("user")} className="nav-link">
         User Page
       </button>
-      <button
-        onClick={() => setPage("admin")}
-        className="nav-link"
-        // style={{ margin: 20 }}
-      >
+      <button onClick={() => setPage("admin")} className="nav-link">
         Admin Page
       </button>
     </div>

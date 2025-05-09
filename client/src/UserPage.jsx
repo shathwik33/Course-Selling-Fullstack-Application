@@ -8,7 +8,7 @@ export default function UserPage() {
   return (
     <div className="body">
       <nav>
-        <Link to="/user/courses" className="nav-link">
+        <Link to="/" className="nav-link">
           Courses
         </Link>
         |
@@ -26,7 +26,7 @@ export default function UserPage() {
       </nav>
       <div className="container">
         <Routes>
-          <Route path="/user/courses" element={<Courses />} />
+          <Route path="/" element={<Courses />} />
           <Route path="/user/signin" element={<UserSignin />} />
           <Route path="/user/signup" element={<UserSignup />} />
           <Route path="/user/purchases" element={<Purchases />} />

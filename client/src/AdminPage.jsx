@@ -8,7 +8,7 @@ export default function AdminPage() {
   return (
     <div className="body">
       <nav>
-        <Link to="/admin/course" className="nav-link">
+        <Link to="/" className="nav-link">
           Courses
         </Link>{" "}
         |
@@ -26,7 +26,7 @@ export default function AdminPage() {
       </nav>
       <div className="container">
         <Routes>
-          <Route path="/admin/course" element={<Courses />} />
+          <Route path="/" element={<Courses />} />
           <Route path="/admin/signin" element={<AdminSignin />} />
           <Route path="/admin/signup" element={<AdminSignup />} />
           <Route path="/admin/courses" element={<AdminCourses />} />
