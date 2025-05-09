@@ -12,7 +12,7 @@ export default function UserSignup() {
   async function handleSubmit(e) {
     e.preventDefault();
     setMsg("");
-    const res = await fetch("http://localhost:3000/user/signup", {
+    const res = await fetch("https://course-selling-fullstack-application.onrender.com/user/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),

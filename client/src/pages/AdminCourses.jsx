@@ -17,7 +17,7 @@ export default function AdminCourses() {
       setMsg("Sign in as admin to view courses");
       return;
     }
-    fetch("http://localhost:3000/admin/course/bulk", {
+    fetch("https://course-selling-fullstack-application.onrender.com/admin/course/bulk", {
       headers: { Authorization: "Bearer " + token },
     })
       .then((res) => res.json())
@@ -30,7 +30,7 @@ export default function AdminCourses() {
   async function handleCreate(e) {
     e.preventDefault();
     setMsg("");
-    const res = await fetch("http://localhost:3000/admin/course", {
+    const res = await fetch("https://course-selling-fullstack-application.onrender.com/admin/course", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

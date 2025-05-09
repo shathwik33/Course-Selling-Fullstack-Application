@@ -5,7 +5,7 @@ export default function Courses() {
   const [msg, setMsg] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:3000/course/preview")
+    fetch("https://course-selling-fullstack-application.onrender.com/course/preview")
       .then((res) => res.json())
       .then(setCourses);
   }, []);
@@ -17,7 +17,7 @@ export default function Courses() {
       setMsg("Sign in as user to purchase");
       return;
     }
-    const res = await fetch("http://localhost:3000/course/purchase", {
+    const res = await fetch("https://course-selling-fullstack-application.onrender.com/course/purchase", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

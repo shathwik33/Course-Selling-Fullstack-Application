@@ -10,7 +10,7 @@ export default function Purchases() {
       setMsg("Sign in as user to view purchases");
       return;
     }
-    fetch("http://localhost:3000/user/purchases", {
+    fetch("https://course-selling-fullstack-application.onrender.com/user/purchases", {
       headers: { Authorization: "Bearer " + token },
     })
       .then((res) => res.json())

@@ -26,7 +26,7 @@ export default function UserSignin() {
     setMsg("");
 
     try {
-      const res = await fetch("http://localhost:3000/user/signin", {
+      const res = await fetch("https://course-selling-fullstack-application.onrender.com/user/signin", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
